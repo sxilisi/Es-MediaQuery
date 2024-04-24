@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.card {
+  width: calc(33.33% - 20px); 
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+.info {
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu span {
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #333;
+  margin-right: 3px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.like,
+.comment {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.like i,
+.comment i {
+  font-size: 20px;
+}
+
+.description {
+  font-size: 14px;
+}
+
+@media  screen and (max-width:768px){
+    body{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 33%;
+        margin-bottom: 20px; 
+    }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    flex-direction: column; /* Impiliamo le card verticalmente su dispositivi mobili */
+  }
+
+  .card {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+}
